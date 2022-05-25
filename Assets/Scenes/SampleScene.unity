@@ -355,7 +355,7 @@ GameObject:
   - component: {fileID: 1374757550}
   - component: {fileID: 1374757554}
   m_Layer: 0
-  m_Name: Bolinha
+  m_Name: Bolinha Player 1
   m_TagString: Bola
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -667,7 +667,7 @@ GameObject:
   - component: {fileID: 1677483618}
   - component: {fileID: 1677483617}
   m_Layer: 0
-  m_Name: Plataforma
+  m_Name: Plataforma Player 1
   m_TagString: Plataforma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -809,10 +809,18 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 17a62677-d9bd-4b4d-874f-6c9ef5559959
+    m_ActionName: Player 2/Movimento[/Keyboard/a,/Keyboard/d,/XInputControllerWindows/leftStick/left,/XInputControllerWindows/leftStick/right,/XInputControllerWindows/dpad/left,/XInputControllerWindows/dpad/right]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ce1130b8-bf13-403a-b72e-ccbe10a3fd47
+    m_ActionName: Player 2/Poder[/Keyboard/w,/XInputControllerWindows/buttonSouth,/XInputControllerWindows/buttonWest,/XInputControllerWindows/buttonEast,/XInputControllerWindows/buttonNorth]
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1677483618}
         m_TargetAssemblyTypeName: MovimentoPlataforma, Assembly-CSharp
-        m_MethodName: MovimentoBolinha
+        m_MethodName: PlataformMoviment
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -822,8 +830,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 47653f87-9e9a-4854-8b62-e5066dd0c913
-    m_ActionName: Player 1/Movimento[/Keyboard/leftArrow,/Keyboard/rightArrow,/XInputControllerWindows/leftStick/left,/XInputControllerWindows/leftStick/right,/XInputControllerWindows/dpad/left,/XInputControllerWindows/dpad/right]
+    m_ActionId: 8c1f75d4-19ae-412b-b413-11b2968e582a
+    m_ActionName: Player 1/Movimento[/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1677483618}
@@ -838,21 +846,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: e6759bce-70e0-46d2-a4bf-3f5f97f6202e
-    m_ActionName: Player 1/Poder[/Keyboard/upArrow,/XInputControllerWindows/buttonSouth,/XInputControllerWindows/buttonWest,/XInputControllerWindows/buttonEast,/XInputControllerWindows/buttonNorth]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 17a62677-d9bd-4b4d-874f-6c9ef5559959
-    m_ActionName: Player 2/Movimento[/Keyboard/a,/Keyboard/d,/XInputControllerWindows/leftStick/left,/XInputControllerWindows/leftStick/right,/XInputControllerWindows/dpad/left,/XInputControllerWindows/dpad/right]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: ce1130b8-bf13-403a-b72e-ccbe10a3fd47
-    m_ActionName: Player 2/Poder[/Keyboard/w,/XInputControllerWindows/buttonSouth,/XInputControllerWindows/buttonWest,/XInputControllerWindows/buttonEast,/XInputControllerWindows/buttonNorth]
+    m_ActionId: df7c501b-106e-451e-9e1f-671df5a1abca
+    m_ActionName: Player 1/Poder[/Keyboard/w]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player 1
   m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 519420031}
 --- !u!114 &1677483618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -865,6 +865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 194c3d90b30433a4cbc995080fe54462, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &1679586054
 GameObject:
   m_ObjectHideFlags: 0

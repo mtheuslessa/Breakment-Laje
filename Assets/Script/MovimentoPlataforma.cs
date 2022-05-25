@@ -11,20 +11,30 @@ public class MovimentoPlataforma : MonoBehaviour{
     void Start(){
         rb = GetComponent<Rigidbody2D>();
     }
-    
-    void FixedUpdate(){
-        
-    }
 
     public void PlataformMoviment (InputAction.CallbackContext context){
+        Vector2 inputValue = context.ReadValue<Vector2>();
         if (context.performed){
-            Vector2 inputValue = context.ReadValue<Vector2>();
-            rb.velocity = Vector2.right * speed * inputValue * Time.deltaTime;
+            rb.velocity = new Vector2((inputValue.x * speed), rb.velocity.y);
+        }
+
+        if (context.canceled){
+            slowDownPlataform(context.ReadValue<Vector2>().x);
         }
     }
 
     public void SoltarPoder(InputAction.CallbackContext context){
         if(context.performed)
             Debug.Log("Poder" + context.phase);
+    }
+
+    public void slowDownPlataform(float direction){
+        if (direction == -1){
+            rb.velocity = new Vector2(rb.velocity.x - 1f, rb.velocity.y);
+        }else{
+            rb.velocity = new Vector2(0, 0);
+        }
+
+
     }
 }

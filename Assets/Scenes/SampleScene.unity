@@ -477,7 +477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ac32d5bec854324b8562991838055be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 30
+  velocidade: 50
 --- !u!1 &1406843617
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,7 +682,7 @@ EdgeCollider2D:
   m_GameObject: {fileID: 1677483612}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 874a195b25c74e247af9f02283edf7bb, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -703,7 +703,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1677483612}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -834,9 +834,9 @@ MonoBehaviour:
     m_ActionName: Player 1/Movimento[/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1677483618}
-        m_TargetAssemblyTypeName: MovimentoPlataforma, Assembly-CSharp
-        m_MethodName: SoltarPoder
+      - m_Target: {fileID: 1374757554}
+        m_TargetAssemblyTypeName: MovimentoBola, Assembly-CSharp
+        m_MethodName: SoltarBolinha
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

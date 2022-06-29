@@ -210,9 +210,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 621567455fd1c4ceb811cc8a00b6a1a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NotificationBehavior: 0
-  m_MaxPlayerCount: -1
-  m_AllowJoining: 1
+  m_NotificationBehavior: 2
+  m_MaxPlayerCount: 2
+  m_AllowJoining: 0
   m_JoinBehavior: 0
   m_PlayerJoinedEvent:
     m_PersistentCalls:
@@ -809,14 +809,6 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 17a62677-d9bd-4b4d-874f-6c9ef5559959
-    m_ActionName: Player 2/Movimento[/Keyboard/a,/Keyboard/d,/XInputControllerWindows/leftStick/left,/XInputControllerWindows/leftStick/right,/XInputControllerWindows/dpad/left,/XInputControllerWindows/dpad/right]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: ce1130b8-bf13-403a-b72e-ccbe10a3fd47
-    m_ActionName: Player 2/Poder[/Keyboard/w,/XInputControllerWindows/buttonSouth,/XInputControllerWindows/buttonWest,/XInputControllerWindows/buttonEast,/XInputControllerWindows/buttonNorth]
-  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1677483618}
         m_TargetAssemblyTypeName: MovimentoPlataforma, Assembly-CSharp
@@ -848,8 +840,16 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: df7c501b-106e-451e-9e1f-671df5a1abca
     m_ActionName: Player 1/Poder[/Keyboard/w]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 17a62677-d9bd-4b4d-874f-6c9ef5559959
+    m_ActionName: Player 2/Movimento[/Keyboard/a,/Keyboard/d,/DualShock4GamepadHID/dpad/left,/DualShock4GamepadHID/dpad/right,/DualShock4GamepadHID/leftStick/left,/DualShock4GamepadHID/leftStick/right]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ce1130b8-bf13-403a-b72e-ccbe10a3fd47
+    m_ActionName: Player 2/Poder[/Keyboard/w,/DualShock4GamepadHID/buttonSouth,/DualShock4GamepadHID/buttonWest,/DualShock4GamepadHID/buttonEast,/DualShock4GamepadHID/buttonNorth]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: Player 1
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 519420031}

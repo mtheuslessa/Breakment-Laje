@@ -69,7 +69,7 @@ public class PosicionamentoBlocos : MonoBehaviour{
             blocosEsquerdaBool[i] = true;
         }
 
-        pontuacaoBlocos.updateTextoP1(pontosReset);
+        pontuacaoBlocos.UpdateTextoP1(pontosReset);
         pontosReset = 0;
     }
     
@@ -91,7 +91,21 @@ public class PosicionamentoBlocos : MonoBehaviour{
             blocosDireitaBool[i] = true;
         }
 
-        pontuacaoBlocos.updateTextoP2(pontosReset);
+        pontuacaoBlocos.UpdateTextoP2(pontosReset);
         pontosReset = 0;
+    }
+
+    public void ResetaAmbos(){
+        for (int i = 0; i < blocosDireita.Length; i++){
+            blocosDireita[i].SetActive(true);
+            blocosDireitaBool[i] = true;
+            
+            blocosEsquerda[i].SetActive(true);
+            blocosEsquerdaBool[i] = true;
+        }
+        
+        pontuacaoBlocos.ResetarPontos();
+        bolaP1.Reset();
+        bolaP2.Reset();
     }
 }

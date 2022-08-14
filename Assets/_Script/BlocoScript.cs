@@ -41,24 +41,24 @@ public class BlocoScript : MonoBehaviour {
 
     public void atualizaPontosEsquerda(){
         if (gameObject.CompareTag("Bloco Azul")){
-            pontuacao.updateTextoP1(pontosAzul);
+            pontuacao.UpdateTextoP1(pontosAzul);
         }
         if (gameObject.CompareTag("Bloco Verde")){
-            pontuacao.updateTextoP1(pontosVerde);
+            pontuacao.UpdateTextoP1(pontosVerde);
         }
         if (gameObject.CompareTag("Bloco Laranja")){
-            pontuacao.updateTextoP1(pontosLaranja);
+            pontuacao.UpdateTextoP1(pontosLaranja);
         }
     }
     public void atualizaPontosDireita(){
         if (gameObject.CompareTag("Bloco Azul")){
-            pontuacao.updateTextoP2(pontosAzul);
+            pontuacao.UpdateTextoP2(pontosAzul);
         }
         if (gameObject.CompareTag("Bloco Verde")){
-            pontuacao.updateTextoP2(pontosVerde);
+            pontuacao.UpdateTextoP2(pontosVerde);
         }
         if (gameObject.CompareTag("Bloco Laranja")){
-            pontuacao.updateTextoP2(pontosLaranja);
+            pontuacao.UpdateTextoP2(pontosLaranja);
         }
     }
 }

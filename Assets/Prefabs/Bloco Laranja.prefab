@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 372576611092315420}
   m_Layer: 7
   m_Name: Bloco Laranja
-  m_TagString: Untagged
+  m_TagString: Bloco Laranja
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

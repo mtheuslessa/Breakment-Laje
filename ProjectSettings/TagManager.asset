@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Plataforma
   - Bola
+  - Bloco Azul
+  - Bloco Verde
+  - Bloco Laranja
   layers:
   - Default
   - TransparentFX

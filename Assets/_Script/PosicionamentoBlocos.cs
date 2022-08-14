@@ -1,11 +1,9 @@
-using System;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class PosicionamentoBlocos : MonoBehaviour{
     public GameObject[] blocosEsquerda;
     public GameObject[] blocosDireita;
+    public Bola bolaP1, bolaP2;
 
     private bool[] blocosEsquerdaBool;
     private bool[] blocosDireitaBool;
@@ -43,6 +41,22 @@ public class PosicionamentoBlocos : MonoBehaviour{
                     blocosEsquerdaBool[i] = true;
                 }
             }
+        }
+    }
+
+    public void ResetEsquerda(){
+        bolaP1.Reset();
+        for (int i = 0; i < blocosEsquerda.Length; i++){
+            blocosEsquerda[i].SetActive(true);
+            blocosEsquerdaBool[i] = true;
+        }
+    }
+    
+    public void ResetDireita(){
+        bolaP2.Reset();
+        for (int i = 0; i < blocosDireita.Length; i++){
+            blocosDireita[i].SetActive(true);
+            blocosDireitaBool[i] = true;
         }
     }
 }

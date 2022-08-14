@@ -1,17 +1,19 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Random = UnityEngine.Random;
 
 public class Bola : MonoBehaviour {
     private Rigidbody2D rb;
+    private Vector3 posicaoOriginal;
+    
 
     public float velocidade = 5f;
     public bool player1;
     public bool player2;
-    
+
     private void Awake() {
         rb = GetComponent<Rigidbody2D>();
+        posicaoOriginal = transform.position;
     }
 
     private void Start() {
@@ -49,5 +51,11 @@ public class Bola : MonoBehaviour {
 
     private void PararVibrar(){
         Gamepad.current.SetMotorSpeeds(0, 0);
+    }
+
+    public void Reset(){
+        transform.position = posicaoOriginal;
+        rb.velocity = Vector2.zero;
+        Invoke(nameof(SoltarBolinha), 1f);
     }
 }

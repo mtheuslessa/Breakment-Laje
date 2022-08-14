@@ -3,9 +3,11 @@ using Random = UnityEngine.Random;
 
 public class Bola : MonoBehaviour {
     private Rigidbody2D rb;
+    
     public float velocidade = 5f;
-    public float anguloMaximoBola = 75f;
-
+    public bool player1;
+    public bool player2;
+    
     private void Awake() {
         rb = GetComponent<Rigidbody2D>();
     }
@@ -21,8 +23,10 @@ public class Bola : MonoBehaviour {
     public void SoltarBolinha(){
         Vector2 forca = Vector2.zero;
         forca.y = Random.Range(-1, 2);
-        Debug.Log(forca.y);
-        forca.x = 1f;
+        if(player1)
+            forca.x = 1f; 
+        if(player2)
+            forca.x = -1f;
         rb.AddForce(forca.normalized * velocidade);    
     }
 }

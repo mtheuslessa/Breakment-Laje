@@ -1,21 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BlocoScript : MonoBehaviour {
-    public int vida;
+    public int vidaAtual, vidaTotal;
     public bool imortal;
+    public PosicionamentoBlocos posBlocos;
+    public bool esquerda, direita;
 
     private void OnCollisionEnter2D(Collision2D other) {
-        atualizaVida();
+        AtualizaVida();
     }
 
-    public void atualizaVida(){
+    public void AtualizaVida(){
         if (!imortal) {
-            vida--;
-            if (vida < 0)
-            {
-                Destroy(gameObject);
+            vidaAtual--;
+            if (vidaAtual <= 0){
+                if(esquerda)
+                    posBlocos.BlocoEsquerdaQuebrado(gameObject);
+                if(direita)
+                    posBlocos.BlocoDireitaQuebrado(gameObject);
+                vidaAtual = vidaTotal;
             }
         }
     }

@@ -8,6 +8,13 @@ public class PosicionamentoBlocos : MonoBehaviour{
     private bool[] blocosEsquerdaBool;
     private bool[] blocosDireitaBool;
 
+    public Pontuacao pontuacaoBlocos;
+    
+    private long pontosAzul = 100;
+    private long pontosVerde = 250;
+    private long pontosLaranja = 500;
+    private long pontosReset = 0;
+
     private void Awake(){
         blocosEsquerdaBool = new bool[blocosEsquerda.Length];
         blocosDireitaBool = new bool[blocosDireita.Length];
@@ -47,16 +54,44 @@ public class PosicionamentoBlocos : MonoBehaviour{
     public void ResetEsquerda(){
         bolaP1.Reset();
         for (int i = 0; i < blocosEsquerda.Length; i++){
+            if (!blocosEsquerdaBool[i]){
+                if (blocosEsquerda[i].CompareTag("Bloco Azul")){
+                    pontosReset += pontosAzul;
+                }
+                if (blocosEsquerda[i].CompareTag("Bloco Verde")){
+                    pontosReset += pontosVerde;
+                }
+                if (blocosEsquerda[i].CompareTag("Bloco Laranja")){
+                    pontosReset += pontosLaranja;
+                }
+            }
             blocosEsquerda[i].SetActive(true);
             blocosEsquerdaBool[i] = true;
         }
+
+        pontuacaoBlocos.updateTextoP1(pontosReset);
+        pontosReset = 0;
     }
     
     public void ResetDireita(){
         bolaP2.Reset();
         for (int i = 0; i < blocosDireita.Length; i++){
+            if (!blocosDireitaBool[i]){
+                if (blocosDireita[i].CompareTag("Bloco Azul")){
+                    pontosReset += pontosAzul;
+                }
+                if (blocosDireita[i].CompareTag("Bloco Verde")){
+                    pontosReset += pontosVerde;
+                }
+                if (blocosDireita[i].CompareTag("Bloco Laranja")){
+                    pontosReset += pontosLaranja;
+                }
+            }
             blocosDireita[i].SetActive(true);
             blocosDireitaBool[i] = true;
         }
+
+        pontuacaoBlocos.updateTextoP2(pontosReset);
+        pontosReset = 0;
     }
 }

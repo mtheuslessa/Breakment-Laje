@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -7,6 +5,7 @@ public class MovimentoBola : MonoBehaviour{
     private Rigidbody2D rb;
     private CircleCollider2D colisor;
     private bool rodando;
+    private Vector2 velocidadeAtual;
     
     public Transform barrinha;
     public float velocidade;
@@ -16,6 +15,7 @@ public class MovimentoBola : MonoBehaviour{
         colisor = GetComponent<CircleCollider2D>();
         
         rb.velocity = Vector2.one.normalized * velocidade;
+        velocidadeAtual = rb.velocity;
         
         soltarBolinha();
     }
@@ -25,7 +25,7 @@ public class MovimentoBola : MonoBehaviour{
             transform.position = barrinha.position;
             colisor.enabled = false;
         } else {
-            /*if (rb.velocity.x > 0f && rb.velocity.x != velocidade) {
+            if (rb.velocity.x > 0f && rb.velocity.x != velocidade) {
                 rb.velocity.Set(velocidade, rb.velocity.y);
             }
                 
@@ -39,7 +39,7 @@ public class MovimentoBola : MonoBehaviour{
                 
             if (rb.velocity.y < 0f && rb.velocity.y != -velocidade) {
                 rb.velocity.Set(-velocidade, rb.velocity.y);
-            }*/
+            }
         }
     }
 

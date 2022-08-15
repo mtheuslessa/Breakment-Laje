@@ -35,7 +35,7 @@ public class Bola : MonoBehaviour {
     }
 
     private void OnCollisionEnter2D(Collision2D col){
-        //VibrarControle(Random.Range(0f, 0.3f));
+        VibrarControle(Random.Range(0f, 0.3f));
     }
 
     private void VibrarControle(float duracao){
@@ -56,6 +56,6 @@ public class Bola : MonoBehaviour {
     public void Reset(){
         transform.position = posicaoOriginal;
         rb.velocity = Vector2.zero;
-        Invoke(nameof(SoltarBolinha), 1f);
+        Invoke(nameof(SoltarBolinha), 2f);
     }
 }

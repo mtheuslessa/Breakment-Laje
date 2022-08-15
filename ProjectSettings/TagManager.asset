@@ -18,7 +18,7 @@ TagManager:
   - UI
   - Background
   - Objetos
-  - 
+  - UI2
   - 
   - 
   - 
@@ -49,9 +49,9 @@ TagManager:
   - name: Background
     uniqueID: 535647775
     locked: 0
-  - name: UI
-    uniqueID: 703878431
-    locked: 0
   - name: Objetos
     uniqueID: 1816955365
+    locked: 0
+  - name: UI
+    uniqueID: 703878431
     locked: 0

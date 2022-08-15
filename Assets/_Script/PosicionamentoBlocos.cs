@@ -96,6 +96,8 @@ public class PosicionamentoBlocos : MonoBehaviour{
     }
 
     public void ResetaAmbos(){
+        pontuacaoBlocos.MaiorPontuacao();
+        
         for (int i = 0; i < blocosDireita.Length; i++){
             blocosDireita[i].SetActive(true);
             blocosDireitaBool[i] = true;
@@ -103,9 +105,7 @@ public class PosicionamentoBlocos : MonoBehaviour{
             blocosEsquerda[i].SetActive(true);
             blocosEsquerdaBool[i] = true;
         }
-        
+
         pontuacaoBlocos.ResetarPontos();
-        bolaP1.Reset();
-        bolaP2.Reset();
     }
 }

@@ -1,12 +1,10 @@
-using System;
-using System.Collections;
 using TMPro;
 using UnityEngine;
 
 public class Timer : MonoBehaviour{
     public TextMeshProUGUI timerText;
     public PosicionamentoBlocos posBlocos;
-    
+
     private float tempoTotal = 300f;
     private float minutos, segundos;
     private bool resetar = true;
@@ -25,10 +23,10 @@ public class Timer : MonoBehaviour{
             tempoTotal = 300f;
         }
 
-        MonstarTempo();
+        MostarTempo();
     }
 
-    private void MonstarTempo(){
+    private void MostarTempo(){
         if (tempoTotal < 0){
             tempoTotal = 0;
         }
@@ -36,5 +34,9 @@ public class Timer : MonoBehaviour{
         segundos = Mathf.FloorToInt(tempoTotal % 60);
 
         timerText.text = string.Format("{0:00}:{1:00}", minutos, segundos);
+    }
+
+    public void ResetarTempo(){
+        tempoTotal = 300f;
     }
 }

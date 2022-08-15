@@ -13,6 +13,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Reset",
+                    "type": "Button",
+                    "id": "0858656f-dc2f-40d3-9dc1-4dd68eff22cb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -30,7 +39,7 @@
                 {
                     "name": "up",
                     "id": "be2b96f7-76fe-4abc-b25c-fe51b2a625c9",
-                    "path": "<Keyboard>/upArrow",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "PC",
@@ -41,7 +50,7 @@
                 {
                     "name": "down",
                     "id": "12665d39-a3ba-413b-9993-cf35a01725b3",
-                    "path": "<Keyboard>/downArrow",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "PC",
@@ -114,6 +123,17 @@
                     "action": "Movimento",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "9b049d1c-1188-416c-9595-f27e46d5c49f",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reset",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -146,7 +166,7 @@
                 {
                     "name": "up",
                     "id": "81e3269b-6f39-4a98-91ae-042ae94911c0",
-                    "path": "<Keyboard>/w",
+                    "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "PC",
@@ -157,7 +177,7 @@
                 {
                     "name": "down",
                     "id": "bf9a81ca-0bdc-4291-9258-88e802be9c08",
-                    "path": "<Keyboard>/s",
+                    "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "PC",

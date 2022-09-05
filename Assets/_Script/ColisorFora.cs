@@ -9,7 +9,13 @@ public class ColisorFora : MonoBehaviour{
     }
 
     private void OnTriggerEnter2D(Collider2D col){
-        Bola bola = col.gameObject.GetComponent<Bola>();
-        bola.Reset();
+        if (col.CompareTag("Bola")){
+            Bola bola = col.gameObject.GetComponent<Bola>();
+            bola.Reset();
+        }
+
+        if (col.CompareTag("PowerUp")){
+            Destroy(col.gameObject);
+        }
     }
 }

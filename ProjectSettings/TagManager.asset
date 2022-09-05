@@ -9,6 +9,7 @@ TagManager:
   - Bloco Azul
   - Bloco Verde
   - Bloco Laranja
+  - PowerUp
   layers:
   - Default
   - TransparentFX

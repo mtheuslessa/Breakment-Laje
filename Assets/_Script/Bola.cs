@@ -93,8 +93,11 @@ public class Bola : MonoBehaviour {
             _timerAtual = 0;
             velocidade *= 2;
         }
-        speed = true;
-        velocidade *= 2;
+
+        if (!speed){
+            speed = true;
+            velocidade *= 2;
+        }
     }
     
     public void PowerUpSlow(){
@@ -103,7 +106,14 @@ public class Bola : MonoBehaviour {
             _timerAtual = 0;
             velocidade /= 2;
         }
-        slow = true;
-        velocidade /= 2;
+
+        if (!slow){
+            slow = true;
+            velocidade /= 2;
+        }
+    }
+
+    public Vector3 getPosicaoOriginal(){
+        return posicaoOriginal;
     }
 }

@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class BlocoScript : MonoBehaviour {
     public int vidaAtual, vidaTotal;
@@ -12,6 +13,8 @@ public class BlocoScript : MonoBehaviour {
     private long pontosAzul = 100;
     private long pontosVerde = 250;
     private long pontosLaranja = 500;
+
+    public SpawnPowerUp spawnPowerUp;
 
     private void Awake(){
         gameManager = GameObject.Find("Game Controller");
@@ -28,10 +31,12 @@ public class BlocoScript : MonoBehaviour {
             if (vidaAtual <= 0){
                 if(esquerda){
                     posBlocos.BlocoEsquerdaQuebrado(gameObject);
+                    SpawnPowerup();
                     atualizaPontosEsquerda();
                 }
                 if (direita){
                     posBlocos.BlocoDireitaQuebrado(gameObject);
+                    SpawnPowerup();
                     atualizaPontosDireita();
                 }
                 vidaAtual = vidaTotal;
@@ -59,6 +64,32 @@ public class BlocoScript : MonoBehaviour {
         }
         if (gameObject.CompareTag("Bloco Laranja")){
             pontuacao.UpdateTextoP2(pontosLaranja);
+        }
+    }
+
+    public void SpawnPowerup(){
+        if(esquerda){
+            if (gameObject.CompareTag("Bloco Azul")){
+                spawnPowerUp.SpawnEsqLowLife(transform.position);
+            }
+            if (gameObject.CompareTag("Bloco Verde")){
+                spawnPowerUp.SpawnEsqMidLife(transform.position);
+            }
+            if (gameObject.CompareTag("Bloco Laranja")){
+                spawnPowerUp.SpawnEsqHighLife(transform.position);
+            }
+        }
+
+        if (direita){
+            if (gameObject.CompareTag("Bloco Azul")){
+                spawnPowerUp.SpawnDirLowLife(transform.position);
+            }
+            if (gameObject.CompareTag("Bloco Verde")){
+                spawnPowerUp.SpawnDirMidLife(transform.position);
+            }
+            if (gameObject.CompareTag("Bloco Laranja")){
+                spawnPowerUp.SpawnDirHighLife(transform.position);
+            }
         }
     }
 }

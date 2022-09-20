@@ -17,5 +17,9 @@ public class ColisorFora : MonoBehaviour{
         if (col.CompareTag("PowerUp")){
             Destroy(col.gameObject);
         }
+
+        if (col.CompareTag("BolaPrefab")){
+            Destroy(col.gameObject);
+        }
     }
 }

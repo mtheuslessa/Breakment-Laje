@@ -204,6 +204,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1001 &33009714
@@ -277,6 +281,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1 &39729876 stripped
@@ -342,7 +350,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1740481836}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &55318465
 MonoBehaviour:
@@ -362,7 +370,9 @@ MonoBehaviour:
   playerIndex: 1
   player1: 0
   player2: 1
-  bolaPlayer: {fileID: 1221645396}
+  bolaPlayer: {fileID: 233281744}
+  bolaEnemy: {fileID: 985242637}
+  newBola: {fileID: 2344862536742400482, guid: f48c3f7b2605fe14ab5938f295161e21, type: 3}
 --- !u!68 &55318467
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -554,8 +564,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1374757553}
   - {fileID: 539835367}
+  - {fileID: 985242641}
   m_Father: {fileID: 206861018}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -622,6 +632,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 9154827492301695215, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_Name
       value: Bloco Laranja (1)
@@ -703,6 +717,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1001 &96594313
@@ -768,6 +786,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 6906875953906125914, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -853,6 +875,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1 &104453786 stripped
@@ -890,6 +916,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1007,6 +1037,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 6906875953906125914, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -1112,6 +1146,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1001 &147006967
@@ -1177,6 +1215,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 9154827492301695215, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_Name
       value: Bloco Laranja (17)
@@ -1246,6 +1288,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 6906875953906125914, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -1275,6 +1321,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -1353,6 +1403,7 @@ GameObject:
   - component: {fileID: 198067848}
   - component: {fileID: 198067849}
   - component: {fileID: 198067850}
+  - component: {fileID: 198067852}
   m_Layer: 0
   m_Name: Game Controller
   m_TagString: Untagged
@@ -1559,8 +1610,8 @@ MonoBehaviour:
   - {fileID: 1205666360}
   - {fileID: 2011914928}
   - {fileID: 373752760}
-  bolaP1: {fileID: 1374757556}
-  bolaP2: {fileID: 1221645396}
+  bolaP1: {fileID: 985242637}
+  bolaP2: {fileID: 233281744}
   pontuacaoBlocos: {fileID: 198067849}
 --- !u!114 &198067849
 MonoBehaviour:
@@ -1645,6 +1696,26 @@ MonoBehaviour:
   m_DefaultActionMap: Player 1
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &198067852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198067845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd36e41edfff4b941a2ec815743ba586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUpDir:
+  - {fileID: 1306627833790630723, guid: 04ada91e0f51d7a4d845b4e32a42a394, type: 3}
+  - {fileID: 7465441486296393280, guid: a34d312819a060c4d8028602c110fde4, type: 3}
+  - {fileID: 8467570185952266115, guid: d293a4e5faba78d49b9c561aed0c1d22, type: 3}
+  powerUpEsq:
+  - {fileID: 8467570185952266115, guid: f94d6fdcc36b8fe4384d3ab3bdcebfe5, type: 3}
+  - {fileID: 7465441486296393280, guid: 53a788a829df9a14b919d1c0a998ea84, type: 3}
+  - {fileID: 1306627833790630723, guid: 6f6b89355a5ba12429d1bea4d07649ca, type: 3}
 --- !u!1001 &198984859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1660,6 +1731,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1739,6 +1814,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -1897,8 +1976,152 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+--- !u!1 &233281742
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 233281743}
+  - component: {fileID: 233281747}
+  - component: {fileID: 233281746}
+  - component: {fileID: 233281745}
+  - component: {fileID: 233281744}
+  m_Layer: 7
+  m_Name: Bolinha Player 2
+  m_TagString: Bola
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &233281743
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233281742}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 15, y: -1.1, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.3}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1784171005}
+  m_Father: {fileID: 1740481836}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &233281744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233281742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94669309d7ebdc44c91f3e329e570b6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidade: 10
+  player1: 0
+  player2: 1
+--- !u!58 &233281745
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233281742}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!50 &233281746
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233281742}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 6200000, guid: 874a195b25c74e247af9f02283edf7bb, type: 2}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
+--- !u!212 &233281747
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233281742}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1816955365
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &239236979
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1914,6 +2137,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -1976,157 +2203,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
---- !u!1 &240997275
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 240997279}
-  - component: {fileID: 240997278}
-  - component: {fileID: 240997277}
-  - component: {fileID: 240997276}
-  - component: {fileID: 240997280}
-  m_Layer: 0
-  m_Name: Power - Up / Slow
-  m_TagString: PowerUp
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!50 &240997276
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240997275}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 6
---- !u!61 &240997277
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240997275}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 0.5}
-    newSize: {x: 1, y: 0.5}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.5}
-  m_EdgeRadius: 0
---- !u!212 &240997278
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240997275}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1816955365
-  m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 3625043607559282579, guid: 19fb86013d8c24d6cb8410c0aadf30fa, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 0.5}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &240997279
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240997275}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 12.18, y: -0.059999943, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!114 &240997280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240997275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fcfc7c2d2a169144933a2ca2a2d4036, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  slow: 1
-  multi: 0
-  ladoEsquerdo: 0
-  ladoDireito: 0
 --- !u!1001 &248821081
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2142,6 +2218,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -2355,6 +2435,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 9154827492301695215, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_Name
       value: Bloco Laranja (6)
@@ -2424,6 +2508,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 9154827492301695215, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_Name
       value: Bloco Laranja (15)
@@ -2566,6 +2654,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1001 &345923965
@@ -2643,6 +2735,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1 &349208563 stripped
@@ -2719,6 +2815,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -2895,6 +2995,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 6906875953906125914, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -2934,6 +3038,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -3051,6 +3159,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 9154827492301695215, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_Name
       value: Bloco Laranja (16)
@@ -3182,6 +3294,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 6906875953906125914, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -3259,6 +3375,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 9154827492301695215, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_Name
       value: Bloco Laranja (3)
@@ -3290,6 +3410,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -3415,6 +3539,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 9154827492301695215, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_Name
       value: Bloco Laranja (18)
@@ -3502,6 +3630,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1001 &511060875
@@ -3519,6 +3651,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3830,7 +3966,9 @@ MonoBehaviour:
   playerIndex: 0
   player1: 1
   player2: 0
-  bolaPlayer: {fileID: 1374757556}
+  bolaPlayer: {fileID: 985242637}
+  bolaEnemy: {fileID: 233281744}
+  newBola: {fileID: 2344862536742400482, guid: f48c3f7b2605fe14ab5938f295161e21, type: 3}
 --- !u!68 &539835364
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -3939,7 +4077,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 70231949}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &545194490 stripped
 GameObject:
@@ -4009,157 +4147,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 18}
   m_EdgeRadius: 0
---- !u!1 &561806741
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 561806745}
-  - component: {fileID: 561806744}
-  - component: {fileID: 561806743}
-  - component: {fileID: 561806742}
-  - component: {fileID: 561806746}
-  m_Layer: 0
-  m_Name: Power - Up / Speed
-  m_TagString: PowerUp
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!50 &561806742
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 561806741}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 6
---- !u!61 &561806743
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 561806741}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0026452169}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 0.5}
-    newSize: {x: 1, y: 0.5}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.283094}
-  m_EdgeRadius: 0
---- !u!212 &561806744
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 561806741}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1816955365
-  m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 3625043607559282579, guid: 19fb86013d8c24d6cb8410c0aadf30fa, type: 3}
-  m_Color: {r: 0.12152922, g: 1, b: 0, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 0.5}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &561806745
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 561806741}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 12.18, y: -2.06, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!114 &561806746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 561806741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fcfc7c2d2a169144933a2ca2a2d4036, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
-  slow: 0
-  multi: 0
-  ladoEsquerdo: 0
-  ladoDireito: 1
 --- !u!1 &568322923 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9154827492301695215, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
@@ -4170,146 +4157,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 68171642756094630, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
   m_PrefabInstance: {fileID: 1004600055}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &569529077
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 569529078}
-  - component: {fileID: 569529079}
-  m_Layer: 7
-  m_Name: Trail
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &569529078
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 569529077}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1374757553}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!96 &569529079
-TrailRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 569529077}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 0
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 0
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Time: 0.25
-  m_Parameters:
-    serializedVersion: 3
-    widthMultiplier: 1
-    widthCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0.23529434
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.96518373
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    colorGradient:
-      serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 0.39215687}
-      key1: {r: 1, g: 1, b: 1, a: 0}
-      key2: {r: 0, g: 0, b: 0, a: 0}
-      key3: {r: 0, g: 0, b: 0, a: 0}
-      key4: {r: 0, g: 0, b: 0, a: 0}
-      key5: {r: 0, g: 0, b: 0, a: 0}
-      key6: {r: 0, g: 0, b: 0, a: 0}
-      key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 0
-      ctime1: 65535
-      ctime2: 0
-      ctime3: 0
-      ctime4: 0
-      ctime5: 0
-      ctime6: 0
-      ctime7: 0
-      atime0: 0
-      atime1: 65535
-      atime2: 0
-      atime3: 0
-      atime4: 0
-      atime5: 0
-      atime6: 0
-      atime7: 0
-      m_Mode: 0
-      m_NumColorKeys: 2
-      m_NumAlphaKeys: 2
-    numCornerVertices: 0
-    numCapVertices: 0
-    alignment: 0
-    textureMode: 0
-    shadowBias: 0.5
-    generateLightingData: 0
-  m_MinVertexDistance: 0.1
-  m_Autodestruct: 0
-  m_Emitting: 1
 --- !u!1 &578224610
 GameObject:
   m_ObjectHideFlags: 0
@@ -4421,6 +4268,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1001 &586958632
@@ -4438,6 +4289,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4563,6 +4418,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 6906875953906125914, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -4602,6 +4461,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -4731,6 +4594,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1 &624879063 stripped
@@ -4758,6 +4625,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -4875,6 +4746,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 6906875953906125914, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -4964,6 +4839,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1 &659305986 stripped
@@ -5051,6 +4930,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1001 &672603682
@@ -5116,6 +4999,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 9154827492301695215, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_Name
       value: Bloco Laranja (20)
@@ -5207,6 +5094,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1 &686637663 stripped
@@ -5290,6 +5181,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1 &711604472 stripped
@@ -5317,6 +5212,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -5544,6 +5443,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -5699,6 +5602,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 6906875953906125914, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -5728,6 +5635,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -5797,6 +5708,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -5922,6 +5837,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 6906875953906125914, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -6009,6 +5928,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 6906875953906125914, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -6150,6 +6073,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 6906875953906125914, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -6227,6 +6154,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 6906875953906125914, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -6324,6 +6255,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 6906875953906125914, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -6498,6 +6433,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -6750,6 +6689,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 6906875953906125914, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -6779,6 +6722,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -6891,6 +6838,146 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
   m_PrefabInstance: {fileID: 1570345519}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &985242636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 985242641}
+  - component: {fileID: 985242640}
+  - component: {fileID: 985242639}
+  - component: {fileID: 985242638}
+  - component: {fileID: 985242637}
+  m_Layer: 7
+  m_Name: 'Bolinha Player 1 '
+  m_TagString: Bola
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &985242637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985242636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94669309d7ebdc44c91f3e329e570b6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidade: 10
+  player1: 1
+  player2: 0
+--- !u!58 &985242638
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985242636}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!50 &985242639
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985242636}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 6200000, guid: 874a195b25c74e247af9f02283edf7bb, type: 2}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
+--- !u!212 &985242640
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985242636}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1816955365
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &985242641
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985242636}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -15, y: -1.1, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.3}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1762564455}
+  m_Father: {fileID: 70231949}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &990512815 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1122058718209784747, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
@@ -6916,6 +7003,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -7061,6 +7152,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 9154827492301695215, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_Name
       value: Bloco Laranja (11)
@@ -7082,6 +7177,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -7159,6 +7258,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -7238,6 +7341,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -7307,6 +7414,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -7436,6 +7547,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1 &1030665641 stripped
@@ -7473,6 +7588,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -7753,6 +7872,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1 &1079271645 stripped
@@ -7838,6 +7961,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 9154827492301695215, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_Name
       value: Bloco Laranja (9)
@@ -7935,6 +8062,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1001 &1151054296
@@ -8000,6 +8131,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 6906875953906125914, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -8029,6 +8164,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -8154,6 +8293,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1001 &1183032561
@@ -8219,6 +8362,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 6906875953906125914, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -8288,6 +8435,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -8360,146 +8511,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8100868330046491106, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
   m_PrefabInstance: {fileID: 1172787196}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1221645394
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1221645395}
-  - component: {fileID: 1221645399}
-  - component: {fileID: 1221645398}
-  - component: {fileID: 1221645397}
-  - component: {fileID: 1221645396}
-  m_Layer: 7
-  m_Name: Bolinha Player 2
-  m_TagString: Bola
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1221645395
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1221645394}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15, y: -1.1, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.3}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1854884119}
-  m_Father: {fileID: 1740481836}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1221645396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1221645394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94669309d7ebdc44c91f3e329e570b6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidade: 10
-  player1: 0
-  player2: 1
---- !u!58 &1221645397
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1221645394}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
---- !u!50 &1221645398
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1221645394}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 6200000, guid: 874a195b25c74e247af9f02283edf7bb, type: 2}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 4
---- !u!212 &1221645399
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1221645394}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1816955365
-  m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1228491337 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9154827492301695215, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
@@ -8535,6 +8546,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -8662,6 +8677,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 9154827492301695215, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_Name
       value: Bloco Laranja (8)
@@ -8731,6 +8750,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 6906875953906125914, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -8916,6 +8939,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1 &1290380590 stripped
@@ -9009,6 +9036,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1 &1340479504 stripped
@@ -9084,6 +9115,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 9154827492301695215, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_Name
       value: Bloco Laranja (10)
@@ -9165,6 +9200,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1 &1367158521 stripped
@@ -9187,146 +9226,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 68171642756094630, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
   m_PrefabInstance: {fileID: 265103408}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1374757549
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1374757553}
-  - component: {fileID: 1374757552}
-  - component: {fileID: 1374757550}
-  - component: {fileID: 1374757555}
-  - component: {fileID: 1374757556}
-  m_Layer: 7
-  m_Name: Bolinha Player 1
-  m_TagString: Bola
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!50 &1374757550
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1374757549}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 6200000, guid: 874a195b25c74e247af9f02283edf7bb, type: 2}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 4
---- !u!212 &1374757552
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1374757549}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1816955365
-  m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1374757553
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1374757549}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15, y: -1.1, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.3}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 569529078}
-  m_Father: {fileID: 70231949}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &1374757555
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1374757549}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
---- !u!114 &1374757556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1374757549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94669309d7ebdc44c91f3e329e570b6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidade: 10
-  player1: 1
-  player2: 0
 --- !u!1 &1381879408 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9154827492301695215, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
@@ -9831,6 +9730,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 9154827492301695215, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_Name
       value: Bloco Laranja (2)
@@ -9922,6 +9825,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1 &1443984902 stripped
@@ -9949,6 +9856,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -10392,6 +10303,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1001 &1525106160
@@ -10469,6 +10384,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1001 &1530202069
@@ -10486,6 +10405,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -10629,6 +10552,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1001 &1569375710
@@ -10694,6 +10621,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 9154827492301695215, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_Name
       value: Bloco Laranja (12)
@@ -10715,6 +10646,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -10792,6 +10727,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -10869,6 +10808,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -10948,6 +10891,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -11133,6 +11080,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -11262,6 +11213,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1 &1640076480 stripped
@@ -11367,6 +11322,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -11496,6 +11455,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1 &1659925893 stripped
@@ -11593,6 +11556,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1 &1679586054
@@ -11676,6 +11643,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -11801,6 +11772,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 6906875953906125914, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -11896,6 +11871,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1 &1720642072 stripped
@@ -12081,8 +12060,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1221645395}
   - {fileID: 55318464}
+  - {fileID: 233281743}
   m_Father: {fileID: 206861018}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12116,6 +12095,146 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
   m_PrefabInstance: {fileID: 363284457}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1762564454
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1762564455}
+  - component: {fileID: 1762564456}
+  m_Layer: 7
+  m_Name: Trail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1762564455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762564454}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 985242641}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!96 &1762564456
+TrailRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762564454}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Time: 0.25
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.23529434
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.96518373
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 1, b: 1, a: 0.39215687}
+      key1: {r: 1, g: 1, b: 1, a: 0}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_MinVertexDistance: 0.1
+  m_Autodestruct: 0
+  m_Emitting: 1
 --- !u!1 &1764881604 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1122058718209784747, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
@@ -12197,6 +12316,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1 &1780583519 stripped
@@ -12209,6 +12332,146 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 68171642756094630, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
   m_PrefabInstance: {fileID: 80393526}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1784171004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1784171005}
+  - component: {fileID: 1784171006}
+  m_Layer: 7
+  m_Name: Trail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1784171005
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784171004}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 233281743}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!96 &1784171006
+TrailRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784171004}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Time: 0.25
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.23529434
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.96518373
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 1, b: 1, a: 0.39215687}
+      key1: {r: 1, g: 1, b: 1, a: 0}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_MinVertexDistance: 0.1
+  m_Autodestruct: 0
+  m_Emitting: 1
 --- !u!1001 &1802456996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12272,6 +12535,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 9154827492301695215, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_Name
       value: Bloco Laranja (13)
@@ -12293,6 +12560,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -12436,6 +12707,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1001 &1854298224
@@ -12509,148 +12784,12 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
---- !u!1 &1854884118
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1854884119}
-  - component: {fileID: 1854884120}
-  m_Layer: 7
-  m_Name: Trail
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1854884119
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1854884118}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1221645395}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!96 &1854884120
-TrailRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1854884118}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 0
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 0
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Time: 0.25
-  m_Parameters:
-    serializedVersion: 3
-    widthMultiplier: 1
-    widthCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0.23529434
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.96518373
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    colorGradient:
-      serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 0.39215687}
-      key1: {r: 1, g: 1, b: 1, a: 0}
-      key2: {r: 0, g: 0, b: 0, a: 0}
-      key3: {r: 0, g: 0, b: 0, a: 0}
-      key4: {r: 0, g: 0, b: 0, a: 0}
-      key5: {r: 0, g: 0, b: 0, a: 0}
-      key6: {r: 0, g: 0, b: 0, a: 0}
-      key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 0
-      ctime1: 65535
-      ctime2: 0
-      ctime3: 0
-      ctime4: 0
-      ctime5: 0
-      ctime6: 0
-      ctime7: 0
-      atime0: 0
-      atime1: 65535
-      atime2: 0
-      atime3: 0
-      atime4: 0
-      atime5: 0
-      atime6: 0
-      atime7: 0
-      m_Mode: 0
-      m_NumColorKeys: 2
-      m_NumAlphaKeys: 2
-    numCornerVertices: 0
-    numCapVertices: 0
-    alignment: 0
-    textureMode: 0
-    shadowBias: 0.5
-    generateLightingData: 0
-  m_MinVertexDistance: 0.1
-  m_Autodestruct: 0
-  m_Emitting: 1
 --- !u!1001 &1861014498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12666,6 +12805,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -12799,6 +12942,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1 &1882507618 stripped
@@ -13030,6 +13177,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1 &1931052304 stripped
@@ -13123,6 +13274,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1 &1952143290
@@ -13240,6 +13395,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 9154827492301695215, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_Name
       value: Bloco Laranja (19)
@@ -13261,6 +13420,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -13398,6 +13561,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1 &1959620964 stripped
@@ -13495,6 +13662,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1 &1978382306 stripped
@@ -13570,6 +13741,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 9154827492301695215, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_Name
       value: Bloco Laranja (7)
@@ -13753,6 +13928,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 6906875953906125914, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -13830,6 +14009,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 9154827492301695215, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_Name
       value: Bloco Laranja (4)
@@ -13899,6 +14082,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 6906875953906125914, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -13984,6 +14171,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1001 &2041386715
@@ -14057,6 +14248,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1001 &2041665514
@@ -14134,6 +14329,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!1001 &2056401308
@@ -14199,6 +14398,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 9154827492301695215, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_Name
       value: Bloco Laranja (14)
@@ -14267,6 +14470,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -14402,6 +14609,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 9154827492301695215, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_Name
       value: Bloco Laranja (5)
@@ -14471,6 +14682,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 6906875953906125914, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -14537,157 +14752,6 @@ Transform:
   m_Father: {fileID: 1589689856}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2101374011
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2101374015}
-  - component: {fileID: 2101374014}
-  - component: {fileID: 2101374013}
-  - component: {fileID: 2101374012}
-  - component: {fileID: 2101374016}
-  m_Layer: 0
-  m_Name: Power - Up / Multi
-  m_TagString: PowerUp
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!50 &2101374012
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101374011}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 6
---- !u!61 &2101374013
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101374011}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 0.5}
-    newSize: {x: 1, y: 0.5}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.5}
-  m_EdgeRadius: 0
---- !u!212 &2101374014
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101374011}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1816955365
-  m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 3625043607559282579, guid: 19fb86013d8c24d6cb8410c0aadf30fa, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 0.5}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &2101374015
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101374011}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 12.18, y: -1.06, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!114 &2101374016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101374011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fcfc7c2d2a169144933a2ca2a2d4036, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
-  slow: 0
-  multi: 0
-  ladoEsquerdo: 0
-  ladoDireito: 0
 --- !u!1 &2102317068 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6348411924585304654, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
@@ -14723,6 +14787,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 2874525423011028999, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -14971,6 +15039,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 8481836210155679320, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}
 --- !u!4 &8100868330124390944 stripped
@@ -15041,6 +15113,10 @@ PrefabInstance:
       propertyPath: posBlocos
       value: 
       objectReference: {fileID: 198067848}
+    - target: {fileID: 372576611092315420, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
+      propertyPath: spawnPowerUp
+      value: 
+      objectReference: {fileID: 198067852}
     - target: {fileID: 9154827492301695215, guid: 578c7d6701c22374caa894f58ea33f4b, type: 3}
       propertyPath: m_Name
       value: Bloco Laranja

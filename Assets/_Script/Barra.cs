@@ -11,7 +11,8 @@ public class Barra : MonoBehaviour {
     public float maxBaixo;
     public int playerIndex = 0;
     public bool player1, player2;
-    public Bola bolaPlayer;
+    public Bola bolaPlayer, bolaEnemy;
+    public GameObject newBola;
     
 
     private void Awake() {
@@ -96,7 +97,10 @@ public class Barra : MonoBehaviour {
                 bolaPlayer.PowerUpSpeed();
             }
             if (col.GetComponent<PowerUp>().slow){
-                bolaPlayer.PowerUpSlow();
+                bolaEnemy.PowerUpSlow();
+            }
+            if (col.GetComponent<PowerUp>().multi){
+                Instantiate(newBola, bolaPlayer.getPosicaoOriginal(), Quaternion.identity);
             }
             Destroy(col.gameObject);
         }

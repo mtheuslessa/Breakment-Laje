@@ -12,8 +12,8 @@ public class PowerUp : MonoBehaviour{
 
     private void Update(){
         if(ladoEsquerdo)
-            transform.Translate(Vector3.up * (_velocidade * Time.deltaTime));
+            transform.Translate(Vector3.left * (_velocidade * Time.deltaTime));
         if(ladoDireito)
-            transform.Translate(Vector3.down * (_velocidade * Time.deltaTime));
+            transform.Translate(Vector3.right * (_velocidade * Time.deltaTime));
     }
 }

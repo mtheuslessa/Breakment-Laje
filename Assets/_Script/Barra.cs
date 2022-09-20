@@ -68,12 +68,25 @@ public class Barra : MonoBehaviour {
             float offset = posicaoBarra.y - pontoContato.y;
             float largura = col.otherCollider.bounds.size.y / 2;
 
-            float anguloAtual = Vector2.SignedAngle(Vector2.right, rbBola.velocity);
+            float anguloAtual = 0;
+            
+            if(player1)
+                anguloAtual = Vector2.SignedAngle(Vector2.right, rbBola.velocity);
+            if(player2)
+                anguloAtual = Vector2.SignedAngle(Vector2.left, rbBola.velocity);
             float anguloQuique = -((offset / largura) * _anguloMaximoBola);
             float novoAngulo = Mathf.Clamp(anguloAtual + anguloQuique, -_anguloMaximoBola, _anguloMaximoBola);
             
-            Quaternion rotacao = Quaternion.AngleAxis(novoAngulo, Vector3.forward);
-            rbBola.velocity = rotacao * Vector2.right * rbBola.velocity.magnitude;
+            
+            if(player1){
+                Quaternion rotacao = Quaternion.AngleAxis(novoAngulo, Vector3.forward);
+                rbBola.velocity = rotacao * Vector2.right * rbBola.velocity.magnitude;
+            }
+
+            if (player2){
+                Quaternion rotacao = Quaternion.AngleAxis(novoAngulo, -Vector3.forward);
+                rbBola.velocity = rotacao * Vector2.left * rbBola.velocity.magnitude;
+            }
         }
     }
 

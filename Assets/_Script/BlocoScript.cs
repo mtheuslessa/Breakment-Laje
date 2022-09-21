@@ -13,12 +13,14 @@ public class BlocoScript : MonoBehaviour {
     private long pontosAzul = 100;
     private long pontosVerde = 250;
     private long pontosLaranja = 500;
+    private SoundManager sounds;
 
     public SpawnPowerUp spawnPowerUp;
 
     private void Awake(){
         gameManager = GameObject.Find("Game Controller");
         pontuacao = gameManager.GetComponent<Pontuacao>();
+        sounds = gameManager.GetComponent<SoundManager>();
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
@@ -29,17 +31,19 @@ public class BlocoScript : MonoBehaviour {
         if (!imortal) {
             vidaAtual--;
             if (vidaAtual <= 0){
+                sounds.PlayBlocoQuebrando();
+                SpawnPowerup();
                 if(esquerda){
                     posBlocos.BlocoEsquerdaQuebrado(gameObject);
-                    SpawnPowerup();
                     atualizaPontosEsquerda();
                 }
                 if (direita){
                     posBlocos.BlocoDireitaQuebrado(gameObject);
-                    SpawnPowerup();
                     atualizaPontosDireita();
                 }
                 vidaAtual = vidaTotal;
+            } else{
+                sounds.PlayBolinhaQuicando();
             }
         }
     }

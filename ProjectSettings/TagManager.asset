@@ -11,6 +11,7 @@ TagManager:
   - Bloco Laranja
   - PowerUp
   - BolaPrefab
+  - Colisor
   layers:
   - Default
   - TransparentFX

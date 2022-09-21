@@ -10,6 +10,8 @@ public class Bola : MonoBehaviour {
     private float _timerAtual = 0f;
     private bool speed, slow, multi;
     private ScreenShaker shaker;
+    private SoundManager sounds;
+    private GameObject gameManager;
     
     public float velocidade = 5f;
     public bool player1;
@@ -19,6 +21,7 @@ public class Bola : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
         posicaoOriginal = transform.position;
         shaker = FindObjectOfType<ScreenShaker>();
+        sounds = FindObjectOfType<SoundManager>();
     }
 
     private void Start() {
@@ -66,6 +69,10 @@ public class Bola : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D col){
         //VibrarControle(Random.Range(0f, 0.3f));
         shaker.StartShake(Random.Range(0f, 0.2f), Random.Range(0f, 0.1f));
+        
+        if (col.gameObject.CompareTag("Colisor")){
+            sounds.PlayBolinhaParede();
+        }
     }
 
     private void VibrarControle(float duracao){

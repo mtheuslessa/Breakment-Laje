@@ -8,6 +8,7 @@ public class Barra : MonoBehaviour {
     private Vector2 _direcao;
     private float _anguloMaximoBola = 45f;
     private float timer = 0;
+    private AudioSource somBarra;
 
     public float velocidade = 30f;
     public float maxCima;
@@ -16,10 +17,10 @@ public class Barra : MonoBehaviour {
     public bool player1, player2;
     public Bola bolaPlayer, bolaEnemy;
     public GameObject newBola;
-    
 
     private void Awake() {
         _rb = GetComponent<Rigidbody2D>();
+        somBarra = GetComponent<AudioSource>();
         _rb.drag = 5f;
     }
 
@@ -65,6 +66,8 @@ public class Barra : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D col) {
         Bola bola = col.gameObject.GetComponent<Bola>();
+        
+        somBarra.Play();
 
         if (bola != null){
             Rigidbody2D rbBola = bola.GetComponent<Rigidbody2D>();

@@ -1,10 +1,13 @@
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Barra : MonoBehaviour {
     private Rigidbody2D _rb;
     private Vector2 _direcao;
     private float _anguloMaximoBola = 45f;
+    private float timer = 0;
 
     public float velocidade = 30f;
     public float maxCima;
@@ -26,7 +29,22 @@ public class Barra : MonoBehaviour {
 
     private void FixedUpdate(){
         float verticalInput = 0;
+
+        timer += Time.deltaTime;
         
+        if (timer >= 30)
+            resetGame();
+
+        if (Input.GetAxis("Player 1") != 0){
+            Debug.Log("Carro");
+            resetTimer();
+        } 
+        
+        if (Input.GetAxis("Player 2") != 0){
+            Debug.Log("Moto");
+            resetTimer();
+        }
+
         if (player1){
             verticalInput = Input.GetAxis("Player 1");
         }
@@ -44,19 +62,6 @@ public class Barra : MonoBehaviour {
             transform.position = new Vector2(transform.position.x,maxBaixo);
         }
     }
-    
-    
-
-    /*public void PlataformMoviment (InputAction.CallbackContext context){
-        Vector2 inputValue = context.ReadValue<Vector2>();
-        if (context.performed){
-            _rb.velocity = new Vector2(_rb.velocity.x, (inputValue.y * velocidade));
-        }
-
-        if (context.canceled){
-            _rb.velocity = Vector2.zero;
-        }
-    }*/
 
     private void OnCollisionEnter2D(Collision2D col) {
         Bola bola = col.gameObject.GetComponent<Bola>();
@@ -104,5 +109,13 @@ public class Barra : MonoBehaviour {
             }
             Destroy(col.gameObject);
         }
+    }
+
+    public void resetTimer(){
+        timer = 0;
+    }
+
+    public void resetGame(){
+        SceneManager.LoadScene("Arena");
     }
 }

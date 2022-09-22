@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Random = UnityEngine.Random;
@@ -67,7 +68,7 @@ public class Bola : MonoBehaviour {
     }
 
     private void OnCollisionEnter2D(Collision2D col){
-        //VibrarControle(Random.Range(0f, 0.3f));
+        VibrarControle(Random.Range(0f, 0.3f));
         shaker.StartShake(Random.Range(0f, 0.2f), Random.Range(0f, 0.1f));
         
         if (col.gameObject.CompareTag("Colisor")){
@@ -87,7 +88,8 @@ public class Bola : MonoBehaviour {
     }
 
     private void PararVibrar(){
-        Gamepad.current.SetMotorSpeeds(0, 0);
+        //Gamepad.current.SetMotorSpeeds(0, 0);
+        InputSystem.ResetHaptics();
     }
 
     public void Reset(){
@@ -124,5 +126,9 @@ public class Bola : MonoBehaviour {
 
     public Vector3 getPosicaoOriginal(){
         return posicaoOriginal;
+    }
+
+    private void OnApplicationQuit(){
+        InputSystem.ResetHaptics();
     }
 }

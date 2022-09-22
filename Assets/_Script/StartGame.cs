@@ -7,8 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour{ 
     private void Update(){
-       if (Input.GetKeyDown(KeyCode.Joystick1Button9)){
-           Debug.Log("Teste");
+       if (Gamepad.all[0].startButton.isPressed || Gamepad.all[1].startButton.isPressed){
            SceneManager.LoadScene("Arena");
        }
     }

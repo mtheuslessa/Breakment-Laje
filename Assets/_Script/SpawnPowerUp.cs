@@ -14,7 +14,7 @@ public class SpawnPowerUp : MonoBehaviour{
     }
 
     public int calcPowerUp(){
-        return Random.Range(0, 2);
+        return Random.Range(0, 3);
     }
 
     public void SpawnEsqLowLife(Vector3 position){

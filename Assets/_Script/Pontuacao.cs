@@ -7,6 +7,7 @@ public class Pontuacao : MonoBehaviour{
     private long pontuacaoP2 = 0;
 
     public TextMeshProUGUI textoP1, textoP2, textoVencedor;
+    //public GameObject imagemTexto;
 
     public void UpdateTextoP1(long pontuacao){
         pontuacaoP1 += pontuacao;
@@ -27,7 +28,7 @@ public class Pontuacao : MonoBehaviour{
     }
 
     public void MaiorPontuacao(){
-        textoVencedor.gameObject.SetActive(true);
+        textoVencedor.transform.parent.gameObject.SetActive(true);
         if (pontuacaoP1 > pontuacaoP2){
             textoVencedor.text = "Player 01";
         }else if(pontuacaoP1 < pontuacaoP2){
@@ -38,6 +39,6 @@ public class Pontuacao : MonoBehaviour{
     }
 
     public void ResetScene(){
-        SceneManager.LoadScene("Arena");
+        SceneManager.LoadScene("Menu");
     }
 }

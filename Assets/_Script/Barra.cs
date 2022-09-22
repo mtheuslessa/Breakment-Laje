@@ -36,21 +36,19 @@ public class Barra : MonoBehaviour {
         if (timer >= 30)
             resetGame();
 
-        if (Input.GetAxis("Player 1") != 0){
-            Debug.Log("Carro");
+        if (Gamepad.all[0].leftStick.y.ReadValue() != 0){
             resetTimer();
         } 
         
-        if (Input.GetAxis("Player 2") != 0){
-            Debug.Log("Moto");
+        if (Gamepad.all[1].leftStick.y.ReadValue() != 0){
             resetTimer();
         }
 
         if (player1){
-            verticalInput = Input.GetAxis("Player 1");
+            verticalInput = Gamepad.all[0].leftStick.y.ReadValue();
         }
         if (player2){
-            verticalInput = Input.GetAxis("Player 2");
+            verticalInput = Gamepad.all[1].leftStick.y.ReadValue();
         }
         
         _rb.velocity = new Vector2(_rb.velocity.x, (verticalInput * velocidade));
@@ -119,6 +117,6 @@ public class Barra : MonoBehaviour {
     }
 
     public void resetGame(){
-        SceneManager.LoadScene("Arena");
+        SceneManager.LoadScene("Menu");
     }
 }

@@ -5,7 +5,7 @@ public class Timer : MonoBehaviour{
     public TextMeshProUGUI timerText;
     public PosicionamentoBlocos posBlocos;
 
-    private float tempoTotal = 300f;
+    private float tempoTotal = 180f;
     private float minutos, segundos;
     private bool resetar = true;
 
@@ -20,7 +20,7 @@ public class Timer : MonoBehaviour{
         if (tempoTotal == 0 && resetar){
             posBlocos.ResetaAmbos();
             resetar = false;
-            tempoTotal = 300f;
+            tempoTotal = 180f;
         }
 
         MostarTempo();

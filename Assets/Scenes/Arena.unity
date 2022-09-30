@@ -2611,7 +2611,7 @@ SpriteRenderer:
   m_SortingLayerID: 1816955365
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bf3f7f6ead8877943a0afbb8c10c7c98, type: 3}
   m_Color: {r: 0.87843144, g: 0.36862746, b: 0.41960788, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7459,8 +7459,8 @@ GameObject:
   - component: {fileID: 985242641}
   - component: {fileID: 985242640}
   - component: {fileID: 985242639}
-  - component: {fileID: 985242638}
   - component: {fileID: 985242637}
+  - component: {fileID: 985242642}
   m_Layer: 7
   m_Name: 'Bolinha Player 1 '
   m_TagString: Bola
@@ -7483,22 +7483,6 @@ MonoBehaviour:
   velocidade: 10
   player1: 1
   player2: 0
---- !u!58 &985242638
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 985242636}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!50 &985242639
 Rigidbody2D:
   serializedVersion: 4
@@ -7561,8 +7545,8 @@ SpriteRenderer:
   m_SortingLayerID: 1816955365
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.46274513, g: 0.27058825, b: 0.5372549, a: 1}
+  m_Sprite: {fileID: 21300000, guid: bf3f7f6ead8877943a0afbb8c10c7c98, type: 3}
+  m_Color: {r: 0.46274513, g: 0.25882354, b: 0.5411765, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7580,14 +7564,30 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 985242636}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15, y: -1.1, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.3}
+  m_LocalPosition: {x: -15, y: -1.1000001, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1762564455}
   m_Father: {fileID: 70231949}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &985242642
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985242636}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &990512815 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1122058718209784747, guid: d75c24baa2ce65a4599797bf197b4f9e, type: 3}

@@ -30,6 +30,23 @@ public class Bola : MonoBehaviour {
     }
     
     private void FixedUpdate(){
+        
+        if (rb.velocity.x > 0f && rb.velocity.x != velocidade) {
+            rb.velocity.Set(velocidade, rb.velocity.y);
+        }
+            
+        if (rb.velocity.x < 0f && rb.velocity.x != -velocidade){
+            rb.velocity.Set(-velocidade, rb.velocity.y);
+        }
+            
+        if (rb.velocity.y > 0f && rb.velocity.y != velocidade) {
+            rb.velocity.Set(velocidade, rb.velocity.y);
+        }
+            
+        if (rb.velocity.y < 0f && rb.velocity.y != -velocidade) {
+            rb.velocity.Set(-velocidade, rb.velocity.y);
+        }
+    
         if (speed){
             if (_timerAtual < _speedTimer){
                 _timerAtual += Time.deltaTime;
@@ -37,7 +54,7 @@ public class Bola : MonoBehaviour {
 
             if (_timerAtual >= _speedTimer){
                 _timerAtual = 0;
-                velocidade /= 2;
+                velocidade /= 1.5f;
                 speed = false;
             }
         }
@@ -49,7 +66,7 @@ public class Bola : MonoBehaviour {
 
             if (_timerAtual >= _slowTimer){
                 _timerAtual = 0;
-                velocidade *= 2;
+                velocidade *= 1.5f;
                 slow = false;
             }
         }
@@ -102,12 +119,12 @@ public class Bola : MonoBehaviour {
         if (slow){
             slow = false;
             _timerAtual = 0;
-            velocidade *= 2;
+            velocidade *= 1.5f;
         }
 
         if (!speed){
             speed = true;
-            velocidade *= 2;
+            velocidade *= 1.5f;
         }
     }
     
@@ -115,12 +132,12 @@ public class Bola : MonoBehaviour {
         if (speed){
             speed = false;
             _timerAtual = 0;
-            velocidade /= 2;
+            velocidade /= 1.5f;
         }
 
         if (!slow){
             slow = true;
-            velocidade /= 2;
+            velocidade /= 1.5f;
         }
     }
 

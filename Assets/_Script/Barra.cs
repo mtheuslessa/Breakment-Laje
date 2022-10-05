@@ -106,7 +106,8 @@ public class Barra : MonoBehaviour {
                 bolaEnemy.PowerUpSlow();
             }
             if (col.GetComponent<PowerUp>().multi){
-                Instantiate(newBola, bolaPlayer.getPosicaoOriginal(), Quaternion.identity);
+                var bola =Instantiate(newBola, bolaPlayer.getPosicaoOriginal(), Quaternion.identity);
+                Physics2D.IgnoreCollision(bola.GetComponent<CircleCollider2D>(), bolaPlayer.GetComponent<CircleCollider2D>());
             }
             Destroy(col.gameObject);
         }

@@ -14,6 +14,7 @@ public class BlocoScript : MonoBehaviour {
     private long pontosVerde = 250;
     private long pontosLaranja = 500;
     private SoundManager sounds;
+    public ParticleSystem blocoParticula;
 
     public SpawnPowerUp spawnPowerUp;
 
@@ -21,6 +22,7 @@ public class BlocoScript : MonoBehaviour {
         gameManager = GameObject.Find("Game Controller");
         pontuacao = gameManager.GetComponent<Pontuacao>();
         sounds = gameManager.GetComponent<SoundManager>();
+        //blocoParticula = GetComponentInChildren<ParticleSystem>();
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
@@ -31,6 +33,7 @@ public class BlocoScript : MonoBehaviour {
         if (!imortal) {
             vidaAtual--;
             if (vidaAtual <= 0){
+                blocoParticula.Play();
                 sounds.PlayBlocoQuebrando();
                 SpawnPowerup();
                 if(esquerda){

@@ -1005,6 +1005,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1413020228}
     m_Modifications:
+    - target: {fileID: 858589910829847878, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 2467344152654448573, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: esquerda
       value: 1
@@ -1068,6 +1072,22 @@ PrefabInstance:
     - target: {fileID: 6348411924585304654, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
       propertyPath: m_Name
       value: Bloco Azul
+      objectReference: {fileID: 0}
+    - target: {fileID: 6571108324447367025, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6571108324447367025, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6571108324447367025, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1816955365
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036968016710312709, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
+      propertyPath: playOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebc2c9f2307a9e347859f587651fffb6, type: 3}
@@ -4579,7 +4599,7 @@ MonoBehaviour:
   player2: 0
   bolaPlayer: {fileID: 985242637}
   bolaEnemy: {fileID: 233281744}
-  newBola: {fileID: 2344862536742400482, guid: f48c3f7b2605fe14ab5938f295161e21, type: 3}
+  newBola: {fileID: 2344862536742400482, guid: 9f1a27865958dd64db22dd7f437dd604, type: 3}
 --- !u!68 &539835364
 EdgeCollider2D:
   m_ObjectHideFlags: 0

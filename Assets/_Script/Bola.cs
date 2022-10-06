@@ -30,22 +30,6 @@ public class Bola : MonoBehaviour {
     }
     
     private void FixedUpdate(){
-        
-        if (rb.velocity.x > 0f && rb.velocity.x != velocidade) {
-            rb.velocity.Set(velocidade, rb.velocity.y);
-        }
-            
-        if (rb.velocity.x < 0f && rb.velocity.x != -velocidade){
-            rb.velocity.Set(-velocidade, rb.velocity.y);
-        }
-            
-        if (rb.velocity.y > 0f && rb.velocity.y != velocidade) {
-            rb.velocity.Set(velocidade, rb.velocity.y);
-        }
-            
-        if (rb.velocity.y < 0f && rb.velocity.y != -velocidade) {
-            rb.velocity.Set(-velocidade, rb.velocity.y);
-        }
     
         if (speed){
             if (_timerAtual < _speedTimer){

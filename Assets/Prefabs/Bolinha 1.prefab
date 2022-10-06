@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1933928231741693034}
   - component: {fileID: 8291521262273629790}
   m_Layer: 7
-  m_Name: Bolinha
+  m_Name: Bolinha 1
   m_TagString: BolaPrefab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -137,10 +137,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94669309d7ebdc44c91f3e329e570b6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shaker: {fileID: 0}
   velocidade: 10
-  player1: 0
-  player2: 1
+  player1: 1
+  player2: 0
 --- !u!1 &8257695062638499997
 GameObject:
   m_ObjectHideFlags: 0

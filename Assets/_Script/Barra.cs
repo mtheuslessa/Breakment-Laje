@@ -36,19 +36,25 @@ public class Barra : MonoBehaviour {
         if (timer >= 30)
             resetGame();
 
-        if (Gamepad.all[0].leftStick.y.ReadValue() != 0){
+        if (Gamepad.all[0].leftStick.IsPressed() || Gamepad.all[0].dpad.IsPressed()){
             resetTimer();
         } 
         
-        if (Gamepad.all[1].leftStick.y.ReadValue() != 0){
+        if (Gamepad.all[1].leftStick.IsPressed() || Gamepad.all[1].dpad.IsPressed()){
             resetTimer();
         }
 
         if (player1){
-            verticalInput = Gamepad.all[0].leftStick.y.ReadValue();
+            if(Gamepad.all[0].leftStick.IsPressed())
+                verticalInput = Gamepad.all[0].leftStick.y.ReadValue();
+            if(Gamepad.all[0].dpad.IsPressed())
+                verticalInput = Gamepad.all[0].dpad.y.ReadValue();
         }
         if (player2){
-            verticalInput = Gamepad.all[1].leftStick.y.ReadValue();
+            if(Gamepad.all[1].leftStick.IsPressed())
+                verticalInput = Gamepad.all[1].leftStick.y.ReadValue();
+            if(Gamepad.all[1].dpad.IsPressed())
+                verticalInput = Gamepad.all[1].dpad.y.ReadValue();
         }
         
         _rb.velocity = new Vector2(_rb.velocity.x, (verticalInput * velocidade));

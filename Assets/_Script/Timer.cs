@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour{
     public TextMeshProUGUI timerText;
@@ -23,6 +24,10 @@ public class Timer : MonoBehaviour{
             tempoTotal = 180f;
         }
         MostarTempo();
+
+        if (Input.GetKeyDown(KeyCode.R)){
+            SceneManager.LoadScene("Arena");
+        }
     }
 
     private void MostarTempo(){

@@ -22,7 +22,6 @@ public class Timer : MonoBehaviour{
             resetar = false;
             tempoTotal = 180f;
         }
-
         MostarTempo();
     }
 
@@ -34,9 +33,5 @@ public class Timer : MonoBehaviour{
         segundos = Mathf.FloorToInt(tempoTotal % 60);
 
         timerText.text = string.Format("{0:00}:{1:00}", minutos, segundos);
-    }
-
-    public void ResetarTempo(){
-        tempoTotal = 300f;
     }
 }

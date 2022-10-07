@@ -1525,6 +1525,7 @@ GameObject:
   - component: {fileID: 198067855}
   - component: {fileID: 198067854}
   - component: {fileID: 198067853}
+  - component: {fileID: 198067859}
   m_Layer: 0
   m_Name: Game Controller
   m_TagString: Untagged
@@ -2236,6 +2237,21 @@ MonoBehaviour:
   click: {fileID: 198067855}
   bolinhaPlataforma: {fileID: 198067854}
   blocoQuebrando: {fileID: 198067853}
+--- !u!114 &198067859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198067845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b7811be789b41498388cf3b40e85b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocoAzulParticula: {fileID: 4593186258068700583, guid: b67fcbd36023c434d95c3009c22d91f4, type: 3}
+  blocoVerdeParticula: {fileID: 1425654238776747234, guid: 1c7efe7803f133946a45e2b428c8d149, type: 3}
+  blocoLaranjaParticula: {fileID: 5538467937376385068, guid: 343b2b6f9ca5ab6409a9a0f4426102ab, type: 3}
 --- !u!1001 &198984859
 PrefabInstance:
   m_ObjectHideFlags: 0

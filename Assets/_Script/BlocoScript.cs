@@ -7,14 +7,14 @@ public class BlocoScript : MonoBehaviour {
     public bool imortal;
     public PosicionamentoBlocos posBlocos;
     public bool esquerda, direita;
-    
+
     private GameObject gameManager;
     private Pontuacao pontuacao;
     private long pontosAzul = 100;
     private long pontosVerde = 250;
     private long pontosLaranja = 500;
     private SoundManager sounds;
-    public ParticleSystem blocoParticula;
+    private ParticleController particleController;
 
     public SpawnPowerUp spawnPowerUp;
 
@@ -22,18 +22,18 @@ public class BlocoScript : MonoBehaviour {
         gameManager = GameObject.Find("Game Controller");
         pontuacao = gameManager.GetComponent<Pontuacao>();
         sounds = gameManager.GetComponent<SoundManager>();
-        //blocoParticula = GetComponentInChildren<ParticleSystem>();
+        particleController = gameManager.GetComponent<ParticleController>();
     }
 
-    private void OnCollisionEnter2D(Collision2D other) {
+    private void OnCollisionEnter2D(Collision2D other){
         AtualizaVida();
     }
 
     public void AtualizaVida(){
-        if (!imortal) {
+        if (!imortal){
             vidaAtual--;
             if (vidaAtual <= 0){
-                blocoParticula.Play();
+                ParticleEmitter();
                 sounds.PlayBlocoQuebrando();
                 SpawnPowerup();
                 if(esquerda){
@@ -97,6 +97,18 @@ public class BlocoScript : MonoBehaviour {
             if (gameObject.CompareTag("Bloco Laranja")){
                 spawnPowerUp.SpawnDirHighLife(transform.position);
             }
+        }
+    }
+
+    public void ParticleEmitter(){
+        if (gameObject.CompareTag("Bloco Azul")){
+            particleController.InstantiateParticleAzul(transform.position);
+        }
+        if (gameObject.CompareTag("Bloco Verde")){
+            particleController.InstantiateParticleVerde(transform.position);
+        }
+        if (gameObject.CompareTag("Bloco Laranja")){
+            particleController.InstantiateParticleLaranja(transform.position);
         }
     }
 }
